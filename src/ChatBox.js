@@ -14,26 +14,15 @@ import {
     ListItemText,
     TextField,
     Typography,
-} from "@mui/material";
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import React, { useCallback, useEffect, useRef, useState } from "react";
-// import Page from "src/components/Page";
-// import { AppWeeklySales } from "src/sections/@dashboard/app";
+} from "@mui/material"; 
+import React, { useCallback, useEffect, useRef, useState } from "react"; 
 import { makeStyles } from "@mui/styles";
-// import { useMoralis, useMoralisCloudFunction } from "react-moralis";
-import { useParams } from "react-router-dom";
-// import moment from "moment"; 
+  
 import UserList from "./component/UserList";
 import { Client } from '@xmtp/xmtp-js'
 import { ChatBoxContext } from "./context/ChatBoxContext";
 import Blockies from 'react-blockies'
-import MailBoxModal from "./component/MailBoxModal";
-
-// import { Conversation } from '@xmtp/xmtp-js/dist/types/src/conversations'
+import MailBoxModal from "./component/MailBoxModal"; 
 
 
 
@@ -82,8 +71,7 @@ const useStyles = makeStyles({
     },
 });
 
-function ChatBox() {
-    const { id } = useParams();
+function ChatBox() { 
     const chatboxContext = React.useContext(ChatBoxContext);
     const {
         userList,
