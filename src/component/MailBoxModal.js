@@ -52,12 +52,12 @@ function MailBoxModal({to,sub,setTo,setMessage,setSub,handleClickOpen,handleClos
                     </div>
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose} variant="contained" color="error">Cancel</Button>
-                    <Button onClick={send } variant="contained" color="primary">{isSelected != "" ? "Send" : "Add New User"}<Send /></Button>
+                    <Button onClick={handleClose} variant="contained"  style={{backgroundColor:'#6DBF8B',color:'#fff'}}>Cancel</Button>
+                    <Button onClick={send } variant="contained" style={{backgroundColor:'#6DBF8B',color:'#fff'}}>{isSelected != "" ? "Send" : "Add New User"}<Send /></Button>
                 </DialogActions>
             </Dialog>
 
-            <Button onClick={handleClickOpen} variant="contained" color="primary">Add New Chat</Button>
+            <Button onClick={handleClickOpen} variant="contained"  style={{backgroundColor:'#6DBF8B',color:'#fff'}}>Add New Chat</Button>
 
         </div>
     )
